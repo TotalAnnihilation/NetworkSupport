@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link th:href="@{bootstrap/css/bootstrap.min.css}" rel="stylesheet" />
+<link th:href="@{bootstrap/css/bootstrap-theme.min.css}"
+	rel="stylesheet" />
+<meta charset="UTF-8" />
+<title>网络支撑平台</title>
+</head>
+<body>
+<div class="container">
+	<h1 ondblclick="myFunction()" id="h1">网络支撑平台帮助</h1>
+	<br/>
+	<p id="p1">本项目由李继承主任提出，旨在帮助支撑人员对正在处理的事项进行记录。<br/>后期还会有新功能！</p>
+	<br/>
+	<p class="text-right" id="p2">杜冠男</p>
+	<p class="text-right" id="p3">2017年11月</p>
+	<p class="text-center" id="p4"></p>
+	<p class="text-center" id="p5"></p>
+	<p class="text-center" id="p6"></p>
+	<p class="text-center" id="p7"></p>
+	<p class="text-center" id="p8"></p>
+	<p class="text-center" id="p9"></p>
+	</div>
+<script>
+function myFunction(){
+	document.getElementById("h1").innerHTML="";
+	document.getElementById("p1").innerHTML="";
+	document.getElementById("p2").innerHTML="";
+	document.getElementById("p3").innerHTML="";
+	document.getElementById("p4").innerHTML="我的小鱼你醒了， 还认识早晨吗？";
+	document.getElementById("p5").innerHTML="昨夜你曾经说， 愿夜幕永不开启。";
+	document.getElementById("p6").innerHTML="你的香腮边轻轻滑落的， 是你的泪，还是我的泪？";
+	document.getElementById("p7").innerHTML="初吻吻别的那个季节， 不是已经哭过了吗？";
+	document.getElementById("p8").innerHTML="我的指尖还记忆着， 你慌乱的心跳。";
+	document.getElementById("p9").innerHTML="温润的体香里， 那一绺长发飘飘…… ";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+[INFO ] 09:20:25.684 [main] com.ctc.sd.NetworkSupportApplication - Starting NetworkSupportApplication on overwatch-Genji with PID 4276 (F:\STSWorkspace\NetworkSupport\bin started by Administrator in F:\STSWorkspace\NetworkSupport)
+[INFO ] 09:20:25.710 [main] com.ctc.sd.NetworkSupportApplication - No active profile set, falling back to default profiles: default
+[INFO ] 09:20:25.793 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56528192: startup date [Sat Nov 25 09:20:25 GMT+08:00 2017]; root of context hierarchy
+[INFO ] 09:20:25.878 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.3.Final
+[INFO ] 09:20:26.501 [main] o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+[INFO ] 09:20:26.818 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$33302eb5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 09:20:27.194 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9999 (http)
+[INFO ] 09:20:27.206 [main] o.a.catalina.core.StandardService - Starting service Tomcat
+[INFO ] 09:20:27.207 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.20
+[INFO ] 09:20:27.321 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 09:20:27.321 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1528 ms
+[INFO ] 09:20:27.599 [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 09:20:27.604 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 09:20:27.605 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 09:20:27.605 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 09:20:27.605 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 09:20:28.066 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56528192: startup date [Sat Nov 25 09:20:25 GMT+08:00 2017]; root of context hierarchy
+[INFO ] 09:20:28.123 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/help],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.help(org.springframework.ui.Model)
+[INFO ] 09:20:28.124 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/register],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.register(org.springframework.ui.Model)
+[INFO ] 09:20:28.124 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.test()
+[INFO ] 09:20:28.124 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/processing],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.processing(javax.servlet.http.HttpServletRequest,int,java.lang.String,org.springframework.ui.Model)
+[INFO ] 09:20:28.124 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.MainIndex(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:20:28.124 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.login(org.springframework.ui.Model)
+[INFO ] 09:20:28.124 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dologin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doLogin(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.User,org.springframework.ui.Model)
+[INFO ] 09:20:28.124 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doregister],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doRegister(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.User,org.springframework.ui.Model)
+[INFO ] 09:20:28.125 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.logout(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:20:28.125 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/updateuser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.updateUser(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:20:28.125 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/doupdateuser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doUpdateUser(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.User,org.springframework.ui.Model)
+[INFO ] 09:20:28.125 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/article],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.changeArticle(javax.servlet.http.HttpServletRequest,int,org.springframework.ui.Model)
+[INFO ] 09:20:28.125 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/doupdatearticle],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doUpdateArticle(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.Article,org.springframework.ui.Model,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+[INFO ] 09:20:28.125 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/processed],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.processed(javax.servlet.http.HttpServletRequest,int,java.lang.String,org.springframework.ui.Model)
+[INFO ] 09:20:28.125 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/newarticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.newArticle(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:20:28.125 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/donewarticle],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doNewArticle(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.Article,org.springframework.ui.Model,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+[INFO ] 09:20:28.125 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/delarticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.delarticle(javax.servlet.http.HttpServletRequest,int,org.springframework.web.servlet.mvc.support.RedirectAttributes,org.springframework.ui.Model)
+[INFO ] 09:20:28.125 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/searcharticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.searchArticle(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:20:28.126 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/dosearcharticle],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doSearchArticle(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.Article,org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[INFO ] 09:20:28.127 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 09:20:28.127 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 09:20:28.161 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 09:20:28.161 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 09:20:28.198 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 09:20:28.544 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 09:20:28.581 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+[INFO ] 09:20:28.590 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+[INFO ] 09:20:28.607 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 09:20:28.624 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9999 (http)
+[INFO ] 09:20:28.628 [main] com.ctc.sd.NetworkSupportApplication - Started NetworkSupportApplication in 3.196 seconds (JVM running for 4.214)
+[INFO ] 09:20:30.182 [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 09:20:30.182 [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 09:20:30.197 [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+[INFO ] 09:20:30.244 [http-nio-9999-exec-1] org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+[INFO ] 09:20:30.293 [http-nio-9999-exec-1] o.t.t.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+[INFO ] 09:20:30.293 [http-nio-9999-exec-1] o.t.t.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+[INFO ] 09:20:30.293 [http-nio-9999-exec-1] o.t.m.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[INFO ] 09:20:30.293 [http-nio-9999-exec-1] o.t.m.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+[INFO ] 09:20:30.298 [http-nio-9999-exec-1] org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+[INFO ] 09:20:30.298 [http-nio-9999-exec-1] org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+[ERROR] 09:27:23.847 [http-nio-9999-exec-8] org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-9999-exec-8] Exception processing template "main/processing": Could not parse as assignation sequence: "|data-content=${Article.content}|" (main/processing:72)
+[ERROR] 09:27:23.851 [http-nio-9999-exec-8] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as assignation sequence: "|data-content=${Article.content}|" (main/processing:72)] with root cause
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as assignation sequence: "|data-content=${Article.content}|" (main/processing:72)
+	at org.thymeleaf.standard.expression.AssignationUtils.parseAssignationSequence(AssignationUtils.java:67)
+	at org.thymeleaf.standard.processor.attr.AbstractStandardAttributeModifierAttrProcessor.getModifiedAttributeValues(AbstractStandardAttributeModifierAttrProcessor.java:74)
+	at org.thymeleaf.processor.attr.AbstractAttributeModifierAttrProcessor.processAttribute(AbstractAttributeModifierAttrProcessor.java:62)
+	at org.thymeleaf.processor.attr.AbstractAttrProcessor.doProcess(AbstractAttrProcessor.java:87)
+	at org.thymeleaf.processor.AbstractProcessor.process(AbstractProcessor.java:212)
+	at org.thymeleaf.dom.Node.applyNextProcessor(Node.java:1017)
+	at org.thymeleaf.dom.Node.processNode(Node.java:972)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.Document.process(Document.java:93)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1155)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1244)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:857)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:618)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:223)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1558)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1515)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ] 09:33:01.296 [RMI TCP Connection(2)-192.168.56.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 09:33:01.296 [RMI TCP Connection(2)-192.168.56.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56528192: startup date [Sat Nov 25 09:20:25 GMT+08:00 2017]; root of context hierarchy
+[INFO ] 09:33:01.298 [RMI TCP Connection(2)-192.168.56.1] o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown

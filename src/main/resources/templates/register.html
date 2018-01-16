@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link th:href="@{bootstrap/css/bootstrap.min.css}" rel="stylesheet" />
+<link th:href="@{bootstrap/css/bootstrap-theme.min.css}"
+	rel="stylesheet" />
+<link th:href="@{signin.css}" rel="stylesheet" />
+<meta charset="UTF-8" />
+<title>网络支撑平台</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row vertical-offset-100">
+			<div class="col-md-4 col-md-offset-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">注册新用户</h3>
+					</div>
+					<div class="panel-body">
+					<div><p class="text-danger"><span th:text="${error}"></span></p></div>
+						<form class="form-signin" role="form" th:action="@{doregister}"
+							th:method="post">
+							<input type="text" class="form-control" placeholder="账号"
+								required="required" name="account" />
+								 <input type="password"
+								class="form-control" placeholder="密码" required="required"
+								name="password" />
+								<input type="text"
+								class="form-control" placeholder="姓名" required="required"
+								name="name" />
+								<input type="text"
+								class="form-control" placeholder="联系电话" required="required"
+								name="phone" />
+							<button class="btn btn-lg btn-primary btn-block" type="submit">注册</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

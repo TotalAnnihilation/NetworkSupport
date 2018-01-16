@@ -1,0 +1,764 @@
+[INFO ] 09:04:02.365 [main] com.ctc.sd.NetworkSupportApplication - Starting NetworkSupportApplication on overwatch-Genji with PID 5140 (F:\STSWorkspace\NetworkSupport\build\libs\NetworkSupport-1.0.jar started by Administrator in F:\STSWorkspace\NetworkSupport\build\libs)
+[INFO ] 09:04:02.414 [main] com.ctc.sd.NetworkSupportApplication - No active profile set, falling back to default profiles: default
+[INFO ] 09:04:02.498 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2701b8: startup date [Wed Nov 22 09:04:02 GMT+08:00 2017]; root of context hierarchy
+[INFO ] 09:04:02.516 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.3.Final
+[INFO ] 09:04:03.450 [main] o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+[INFO ] 09:04:03.872 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5b22a56d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 09:04:04.627 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9999 (http)
+[INFO ] 09:04:04.648 [main] o.a.catalina.core.StandardService - Starting service Tomcat
+[INFO ] 09:04:04.649 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.20
+[INFO ] 09:04:04.782 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 09:04:04.782 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2285 ms
+[INFO ] 09:04:05.206 [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 09:04:05.217 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 09:04:05.218 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 09:04:05.218 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 09:04:05.218 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 09:04:05.929 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2701b8: startup date [Wed Nov 22 09:04:02 GMT+08:00 2017]; root of context hierarchy
+[INFO ] 09:04:06.000 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/help],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.help(org.springframework.ui.Model)
+[INFO ] 09:04:06.001 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/register],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.register(org.springframework.ui.Model)
+[INFO ] 09:04:06.001 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.test()
+[INFO ] 09:04:06.001 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/processing],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.processing(javax.servlet.http.HttpServletRequest,int,java.lang.String,org.springframework.ui.Model)
+[INFO ] 09:04:06.001 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.MainIndex(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:04:06.001 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.login(org.springframework.ui.Model)
+[INFO ] 09:04:06.001 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dologin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doLogin(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.User,org.springframework.ui.Model)
+[INFO ] 09:04:06.001 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doregister],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doRegister(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.User,org.springframework.ui.Model)
+[INFO ] 09:04:06.001 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.logout(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:04:06.001 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/updateuser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.updateUser(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:04:06.001 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/doupdateuser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doUpdateUser(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.User,org.springframework.ui.Model)
+[INFO ] 09:04:06.001 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/article],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.changeArticle(javax.servlet.http.HttpServletRequest,int,org.springframework.ui.Model)
+[INFO ] 09:04:06.002 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/doupdatearticle],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doUpdateArticle(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.Article,org.springframework.ui.Model,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+[INFO ] 09:04:06.002 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/processed],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.processed(javax.servlet.http.HttpServletRequest,int,java.lang.String,org.springframework.ui.Model)
+[INFO ] 09:04:06.002 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/newarticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.newArticle(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:04:06.002 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/donewarticle],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doNewArticle(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.Article,org.springframework.ui.Model,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+[INFO ] 09:04:06.002 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/delarticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.delarticle(javax.servlet.http.HttpServletRequest,int,org.springframework.web.servlet.mvc.support.RedirectAttributes,org.springframework.ui.Model)
+[INFO ] 09:04:06.002 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/searcharticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.searchArticle(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:04:06.002 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/dosearcharticle],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doSearchArticle(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.Article,org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[INFO ] 09:04:06.003 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 09:04:06.004 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 09:04:06.044 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 09:04:06.044 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 09:04:06.095 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 09:04:06.475 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 09:04:06.511 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+[INFO ] 09:04:06.520 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+[INFO ] 09:04:06.535 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 09:04:06.569 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9999 (http)
+[INFO ] 09:04:06.575 [main] com.ctc.sd.NetworkSupportApplication - Started NetworkSupportApplication in 4.547 seconds (JVM running for 5.305)
+[INFO ] 09:04:08.236 [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 09:04:08.237 [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 09:04:08.256 [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+[INFO ] 09:04:08.330 [http-nio-9999-exec-2] org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+[INFO ] 09:04:08.402 [http-nio-9999-exec-2] o.t.t.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+[INFO ] 09:04:08.402 [http-nio-9999-exec-2] o.t.t.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+[INFO ] 09:04:08.402 [http-nio-9999-exec-2] o.t.m.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[INFO ] 09:04:08.402 [http-nio-9999-exec-2] o.t.m.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+[INFO ] 09:04:08.408 [http-nio-9999-exec-2] org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+[INFO ] 09:04:08.409 [http-nio-9999-exec-2] org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+[ERROR] 09:04:13.102 [http-nio-9999-exec-8] org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-9999-exec-8] Exception processing template "/main/searchresult": Error resolving template "/main/searchresult", template might not exist or might not be accessible by any of the configured Template Resolvers
+[ERROR] 09:04:13.104 [http-nio-9999-exec-8] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template "/main/searchresult", template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "/main/searchresult", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:246)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1244)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:868)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:223)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1558)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1515)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 09:07:41.930 [http-nio-9999-exec-10] org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-9999-exec-10] Exception processing template "/main/searchresult": Error resolving template "/main/searchresult", template might not exist or might not be accessible by any of the configured Template Resolvers
+[ERROR] 09:07:41.931 [http-nio-9999-exec-10] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template "/main/searchresult", template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "/main/searchresult", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:246)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1244)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:868)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:223)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1558)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1515)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ] 09:18:34.903 [main] com.ctc.sd.NetworkSupportApplication - Starting NetworkSupportApplication on overwatch-Genji with PID 6400 (F:\STSWorkspace\NetworkSupport\build\libs\NetworkSupport-1.0.jar started by Administrator in F:\STSWorkspace\NetworkSupport\build\libs)
+[INFO ] 09:18:34.908 [main] com.ctc.sd.NetworkSupportApplication - No active profile set, falling back to default profiles: default
+[INFO ] 09:18:34.994 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2701b8: startup date [Wed Nov 22 09:18:34 GMT+08:00 2017]; root of context hierarchy
+[INFO ] 09:18:35.099 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.3.Final
+[INFO ] 09:18:35.931 [main] o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+[INFO ] 09:18:36.355 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c60af061] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 09:18:37.177 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9999 (http)
+[INFO ] 09:18:37.200 [main] o.a.catalina.core.StandardService - Starting service Tomcat
+[INFO ] 09:18:37.201 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.20
+[INFO ] 09:18:37.313 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 09:18:37.313 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2319 ms
+[INFO ] 09:18:37.824 [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 09:18:37.839 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 09:18:37.840 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 09:18:37.840 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 09:18:37.840 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 09:18:38.530 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2701b8: startup date [Wed Nov 22 09:18:34 GMT+08:00 2017]; root of context hierarchy
+[INFO ] 09:18:38.592 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/help],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.help(org.springframework.ui.Model)
+[INFO ] 09:18:38.593 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/register],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.register(org.springframework.ui.Model)
+[INFO ] 09:18:38.593 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.test()
+[INFO ] 09:18:38.593 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.MainIndex(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:18:38.593 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.login(org.springframework.ui.Model)
+[INFO ] 09:18:38.593 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dologin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doLogin(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.User,org.springframework.ui.Model)
+[INFO ] 09:18:38.593 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doregister],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doRegister(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.User,org.springframework.ui.Model)
+[INFO ] 09:18:38.593 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.logout(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:18:38.594 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/updateuser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.updateUser(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:18:38.594 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/doupdateuser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doUpdateUser(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.User,org.springframework.ui.Model)
+[INFO ] 09:18:38.594 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/article],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.changeArticle(javax.servlet.http.HttpServletRequest,int,org.springframework.ui.Model)
+[INFO ] 09:18:38.594 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/doupdatearticle],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doUpdateArticle(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.Article,org.springframework.ui.Model,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+[INFO ] 09:18:38.594 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/processed],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.processed(javax.servlet.http.HttpServletRequest,int,java.lang.String,org.springframework.ui.Model)
+[INFO ] 09:18:38.594 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/newarticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.newArticle(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:18:38.594 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/donewarticle],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doNewArticle(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.Article,org.springframework.ui.Model,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+[INFO ] 09:18:38.594 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/delarticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.delarticle(javax.servlet.http.HttpServletRequest,int,org.springframework.web.servlet.mvc.support.RedirectAttributes,org.springframework.ui.Model)
+[INFO ] 09:18:38.594 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/searcharticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.searchArticle(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:18:38.594 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/dosearcharticle],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doSearchArticle(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.Article,org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[INFO ] 09:18:38.594 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/processing],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.processing(javax.servlet.http.HttpServletRequest,int,java.lang.String,org.springframework.ui.Model)
+[INFO ] 09:18:38.596 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 09:18:38.596 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 09:18:38.627 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 09:18:38.627 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 09:18:38.669 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 09:18:39.022 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 09:18:39.062 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+[INFO ] 09:18:39.071 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+[INFO ] 09:18:39.086 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 09:18:39.108 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9999 (http)
+[INFO ] 09:18:39.113 [main] com.ctc.sd.NetworkSupportApplication - Started NetworkSupportApplication in 4.534 seconds (JVM running for 5.238)
+[INFO ] 09:18:39.589 [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 09:18:39.589 [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 09:18:39.612 [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+[WARN ] 09:18:39.644 [http-nio-9999-exec-1] o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+[WARN ] 09:18:41.714 [http-nio-9999-exec-2] o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+[INFO ] 09:18:46.424 [http-nio-9999-exec-3] org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+[INFO ] 09:18:46.482 [http-nio-9999-exec-3] o.t.t.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+[INFO ] 09:18:46.482 [http-nio-9999-exec-3] o.t.t.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+[INFO ] 09:18:46.482 [http-nio-9999-exec-3] o.t.m.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[INFO ] 09:18:46.482 [http-nio-9999-exec-3] o.t.m.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+[INFO ] 09:18:46.486 [http-nio-9999-exec-3] org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+[INFO ] 09:18:46.486 [http-nio-9999-exec-3] org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+[ERROR] 09:18:50.445 [http-nio-9999-exec-4] org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-9999-exec-4] Exception processing template "/main/searchresult": Error resolving template "/main/searchresult", template might not exist or might not be accessible by any of the configured Template Resolvers
+[ERROR] 09:18:50.448 [http-nio-9999-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template "/main/searchresult", template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "/main/searchresult", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:246)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1244)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:868)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:223)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1558)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1515)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ] 09:23:04.881 [main] com.ctc.sd.NetworkSupportApplication - Starting NetworkSupportApplication on overwatch-Genji with PID 5528 (F:\STSWorkspace\NetworkSupport\build\libs\NetworkSupport-1.0.jar started by Administrator in F:\STSWorkspace\NetworkSupport\build\libs)
+[INFO ] 09:23:04.885 [main] com.ctc.sd.NetworkSupportApplication - No active profile set, falling back to default profiles: default
+[INFO ] 09:23:04.962 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5822237a: startup date [Wed Nov 22 09:23:04 GMT+08:00 2017]; root of context hierarchy
+[INFO ] 09:23:05.039 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.3.Final
+[INFO ] 09:23:05.979 [main] o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+[INFO ] 09:23:06.379 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$62f36b9f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 09:23:07.266 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9999 (http)
+[INFO ] 09:23:07.287 [main] o.a.catalina.core.StandardService - Starting service Tomcat
+[INFO ] 09:23:07.288 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.20
+[INFO ] 09:23:07.403 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 09:23:07.404 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2443 ms
+[INFO ] 09:23:07.884 [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 09:23:07.900 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 09:23:07.900 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 09:23:07.900 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 09:23:07.901 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 09:23:08.560 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5822237a: startup date [Wed Nov 22 09:23:04 GMT+08:00 2017]; root of context hierarchy
+[INFO ] 09:23:08.630 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/help],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.help(org.springframework.ui.Model)
+[INFO ] 09:23:08.630 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/register],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.register(org.springframework.ui.Model)
+[INFO ] 09:23:08.631 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.test()
+[INFO ] 09:23:08.631 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/processing],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.processing(javax.servlet.http.HttpServletRequest,int,java.lang.String,org.springframework.ui.Model)
+[INFO ] 09:23:08.631 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.MainIndex(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:23:08.631 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.login(org.springframework.ui.Model)
+[INFO ] 09:23:08.631 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dologin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doLogin(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.User,org.springframework.ui.Model)
+[INFO ] 09:23:08.631 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doregister],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doRegister(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.User,org.springframework.ui.Model)
+[INFO ] 09:23:08.631 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.logout(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:23:08.631 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/updateuser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.updateUser(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:23:08.632 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/doupdateuser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doUpdateUser(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.User,org.springframework.ui.Model)
+[INFO ] 09:23:08.632 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/article],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.changeArticle(javax.servlet.http.HttpServletRequest,int,org.springframework.ui.Model)
+[INFO ] 09:23:08.632 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/doupdatearticle],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doUpdateArticle(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.Article,org.springframework.ui.Model,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+[INFO ] 09:23:08.632 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/processed],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.processed(javax.servlet.http.HttpServletRequest,int,java.lang.String,org.springframework.ui.Model)
+[INFO ] 09:23:08.632 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/newarticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.newArticle(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:23:08.632 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/donewarticle],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doNewArticle(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.Article,org.springframework.ui.Model,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+[INFO ] 09:23:08.632 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/delarticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.delarticle(javax.servlet.http.HttpServletRequest,int,org.springframework.web.servlet.mvc.support.RedirectAttributes,org.springframework.ui.Model)
+[INFO ] 09:23:08.632 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/searcharticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.searchArticle(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:23:08.633 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/dosearcharticle],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doSearchArticle(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.Article,org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[INFO ] 09:23:08.635 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 09:23:08.635 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 09:23:08.673 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 09:23:08.673 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 09:23:08.719 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 09:23:09.092 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 09:23:09.140 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+[INFO ] 09:23:09.156 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+[INFO ] 09:23:09.173 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 09:23:09.201 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9999 (http)
+[INFO ] 09:23:09.205 [main] com.ctc.sd.NetworkSupportApplication - Started NetworkSupportApplication in 4.655 seconds (JVM running for 5.374)
+[INFO ] 09:23:16.935 [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 09:23:16.935 [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 09:23:16.955 [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+[INFO ] 09:23:17.013 [http-nio-9999-exec-1] org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+[INFO ] 09:23:17.084 [http-nio-9999-exec-1] o.t.t.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+[INFO ] 09:23:17.084 [http-nio-9999-exec-1] o.t.t.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+[INFO ] 09:23:17.084 [http-nio-9999-exec-1] o.t.m.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[INFO ] 09:23:17.084 [http-nio-9999-exec-1] o.t.m.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+[INFO ] 09:23:17.090 [http-nio-9999-exec-1] org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+[INFO ] 09:23:17.090 [http-nio-9999-exec-1] org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+[ERROR] 09:23:21.399 [http-nio-9999-exec-7] org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-9999-exec-7] Exception processing template "/main/articlesearchresult": Error resolving template "/main/articlesearchresult", template might not exist or might not be accessible by any of the configured Template Resolvers
+[ERROR] 09:23:21.443 [http-nio-9999-exec-7] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template "/main/articlesearchresult", template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "/main/articlesearchresult", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:246)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1244)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:868)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:223)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1558)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1515)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ] 09:35:44.570 [main] com.ctc.sd.NetworkSupportApplication - Starting NetworkSupportApplication on overwatch-Genji with PID 3016 (F:\STSWorkspace\NetworkSupport\build\libs\NetworkSupport-1.0.jar started by Administrator in F:\STSWorkspace\NetworkSupport\build\libs)
+[INFO ] 09:35:44.573 [main] com.ctc.sd.NetworkSupportApplication - No active profile set, falling back to default profiles: default
+[INFO ] 09:35:44.640 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2701b8: startup date [Wed Nov 22 09:35:44 GMT+08:00 2017]; root of context hierarchy
+[INFO ] 09:35:44.706 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.3.Final
+[INFO ] 09:35:45.594 [main] o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+[INFO ] 09:35:46.033 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c60af061] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 09:35:46.808 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9999 (http)
+[INFO ] 09:35:46.827 [main] o.a.catalina.core.StandardService - Starting service Tomcat
+[INFO ] 09:35:46.829 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.20
+[INFO ] 09:35:46.957 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 09:35:46.958 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2318 ms
+[INFO ] 09:35:47.423 [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 09:35:47.432 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 09:35:47.432 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 09:35:47.432 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 09:35:47.432 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 09:35:48.163 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2701b8: startup date [Wed Nov 22 09:35:44 GMT+08:00 2017]; root of context hierarchy
+[INFO ] 09:35:48.225 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/help],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.help(org.springframework.ui.Model)
+[INFO ] 09:35:48.226 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/register],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.register(org.springframework.ui.Model)
+[INFO ] 09:35:48.226 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.test()
+[INFO ] 09:35:48.226 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/newarticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.newArticle(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:35:48.226 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/processing],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.processing(javax.servlet.http.HttpServletRequest,int,java.lang.String,org.springframework.ui.Model)
+[INFO ] 09:35:48.226 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/donewarticle],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doNewArticle(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.Article,org.springframework.ui.Model,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+[INFO ] 09:35:48.226 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/delarticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.delarticle(javax.servlet.http.HttpServletRequest,int,org.springframework.web.servlet.mvc.support.RedirectAttributes,org.springframework.ui.Model)
+[INFO ] 09:35:48.226 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/searcharticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.searchArticle(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:35:48.226 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/dosearcharticle],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doSearchArticle(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.Article,org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[INFO ] 09:35:48.226 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.MainIndex(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:35:48.226 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.login(org.springframework.ui.Model)
+[INFO ] 09:35:48.227 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dologin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doLogin(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.User,org.springframework.ui.Model)
+[INFO ] 09:35:48.227 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doregister],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doRegister(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.User,org.springframework.ui.Model)
+[INFO ] 09:35:48.227 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.logout(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:35:48.227 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/updateuser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.updateUser(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:35:48.227 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/doupdateuser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doUpdateUser(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.User,org.springframework.ui.Model)
+[INFO ] 09:35:48.227 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/article],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.changeArticle(javax.servlet.http.HttpServletRequest,int,org.springframework.ui.Model)
+[INFO ] 09:35:48.227 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/doupdatearticle],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doUpdateArticle(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.Article,org.springframework.ui.Model,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+[INFO ] 09:35:48.227 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/processed],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.processed(javax.servlet.http.HttpServletRequest,int,java.lang.String,org.springframework.ui.Model)
+[INFO ] 09:35:48.228 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 09:35:48.229 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 09:35:48.268 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 09:35:48.268 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 09:35:48.308 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 09:35:48.668 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 09:35:48.709 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+[INFO ] 09:35:48.719 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+[INFO ] 09:35:48.735 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 09:35:48.761 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9999 (http)
+[INFO ] 09:35:48.768 [main] com.ctc.sd.NetworkSupportApplication - Started NetworkSupportApplication in 4.537 seconds (JVM running for 5.246)
+[INFO ] 09:35:52.927 [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 09:35:52.927 [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 09:35:52.946 [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+[INFO ] 09:35:53.004 [http-nio-9999-exec-1] org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+[INFO ] 09:35:53.081 [http-nio-9999-exec-1] o.t.t.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+[INFO ] 09:35:53.081 [http-nio-9999-exec-1] o.t.t.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+[INFO ] 09:35:53.081 [http-nio-9999-exec-1] o.t.m.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[INFO ] 09:35:53.081 [http-nio-9999-exec-1] o.t.m.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+[INFO ] 09:35:53.087 [http-nio-9999-exec-1] org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+[INFO ] 09:35:53.088 [http-nio-9999-exec-1] org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+[ERROR] 09:35:56.799 [http-nio-9999-exec-10] org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-9999-exec-10] Exception processing template "/main/searchprocessingresult": Error resolving template "/main/searchprocessingresult", template might not exist or might not be accessible by any of the configured Template Resolvers
+[ERROR] 09:35:56.802 [http-nio-9999-exec-10] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template "/main/searchprocessingresult", template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "/main/searchprocessingresult", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:246)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1244)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:868)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:223)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1558)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1515)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 09:36:04.450 [http-nio-9999-exec-1] org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-9999-exec-1] Exception processing template "/main/searchprocessedresult": Error resolving template "/main/searchprocessedresult", template might not exist or might not be accessible by any of the configured Template Resolvers
+[ERROR] 09:36:04.450 [http-nio-9999-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template "/main/searchprocessedresult", template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "/main/searchprocessedresult", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:246)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1244)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:868)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:223)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1558)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1515)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 09:36:35.931 [http-nio-9999-exec-10] org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-9999-exec-10] Exception processing template "/main/searchprocessingresult": Error resolving template "/main/searchprocessingresult", template might not exist or might not be accessible by any of the configured Template Resolvers
+[ERROR] 09:36:35.931 [http-nio-9999-exec-10] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template "/main/searchprocessingresult", template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "/main/searchprocessingresult", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:246)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1244)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:868)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:223)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1558)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1515)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ] 09:41:02.161 [main] com.ctc.sd.NetworkSupportApplication - Starting NetworkSupportApplication on overwatch-Genji with PID 5884 (F:\STSWorkspace\NetworkSupport\build\libs\NetworkSupport-1.0.jar started by Administrator in F:\STSWorkspace\NetworkSupport\build\libs)
+[INFO ] 09:41:02.166 [main] com.ctc.sd.NetworkSupportApplication - No active profile set, falling back to default profiles: default
+[INFO ] 09:41:02.252 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5822237a: startup date [Wed Nov 22 09:41:02 GMT+08:00 2017]; root of context hierarchy
+[INFO ] 09:41:02.294 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.3.Final
+[INFO ] 09:41:03.213 [main] o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+[INFO ] 09:41:03.626 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$62f36b9f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 09:41:04.472 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9999 (http)
+[INFO ] 09:41:04.491 [main] o.a.catalina.core.StandardService - Starting service Tomcat
+[INFO ] 09:41:04.493 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.20
+[INFO ] 09:41:04.610 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 09:41:04.610 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2358 ms
+[INFO ] 09:41:05.022 [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 09:41:05.035 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 09:41:05.036 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 09:41:05.036 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 09:41:05.036 [localhost-startStop-1] o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 09:41:05.707 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5822237a: startup date [Wed Nov 22 09:41:02 GMT+08:00 2017]; root of context hierarchy
+[INFO ] 09:41:05.767 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/help],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.help(org.springframework.ui.Model)
+[INFO ] 09:41:05.767 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/register],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.register(org.springframework.ui.Model)
+[INFO ] 09:41:05.768 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.test()
+[INFO ] 09:41:05.768 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/processing],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.processing(javax.servlet.http.HttpServletRequest,int,java.lang.String,org.springframework.ui.Model)
+[INFO ] 09:41:05.768 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.MainIndex(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:41:05.768 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.login(org.springframework.ui.Model)
+[INFO ] 09:41:05.768 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dologin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doLogin(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.User,org.springframework.ui.Model)
+[INFO ] 09:41:05.768 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doregister],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doRegister(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.User,org.springframework.ui.Model)
+[INFO ] 09:41:05.768 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.logout(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:41:05.768 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/updateuser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.updateUser(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:41:05.768 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/doupdateuser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doUpdateUser(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.User,org.springframework.ui.Model)
+[INFO ] 09:41:05.768 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/article],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.changeArticle(javax.servlet.http.HttpServletRequest,int,org.springframework.ui.Model)
+[INFO ] 09:41:05.768 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/doupdatearticle],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doUpdateArticle(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.Article,org.springframework.ui.Model,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+[INFO ] 09:41:05.768 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/processed],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.processed(javax.servlet.http.HttpServletRequest,int,java.lang.String,org.springframework.ui.Model)
+[INFO ] 09:41:05.769 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/newarticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.newArticle(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:41:05.769 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/donewarticle],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doNewArticle(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.Article,org.springframework.ui.Model,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+[INFO ] 09:41:05.769 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/delarticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.delarticle(javax.servlet.http.HttpServletRequest,int,org.springframework.web.servlet.mvc.support.RedirectAttributes,org.springframework.ui.Model)
+[INFO ] 09:41:05.769 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/searcharticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.ctc.sd.controller.NetworkSupportController.searchArticle(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+[INFO ] 09:41:05.769 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/dosearcharticle],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.ctc.sd.controller.NetworkSupportController.doSearchArticle(javax.servlet.http.HttpServletRequest,com.ctc.sd.entity.Article,org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[INFO ] 09:41:05.770 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 09:41:05.770 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 09:41:05.810 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 09:41:05.810 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 09:41:05.860 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 09:41:06.178 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 09:41:06.217 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+[INFO ] 09:41:06.227 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+[INFO ] 09:41:06.242 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 09:41:06.268 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9999 (http)
+[INFO ] 09:41:06.274 [main] com.ctc.sd.NetworkSupportApplication - Started NetworkSupportApplication in 4.485 seconds (JVM running for 5.192)
+[INFO ] 09:41:06.343 [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 09:41:06.343 [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 09:41:06.372 [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+[INFO ] 09:41:06.441 [http-nio-9999-exec-1] org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+[INFO ] 09:41:06.502 [http-nio-9999-exec-1] o.t.t.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+[INFO ] 09:41:06.503 [http-nio-9999-exec-1] o.t.t.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+[INFO ] 09:41:06.503 [http-nio-9999-exec-1] o.t.m.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[INFO ] 09:41:06.503 [http-nio-9999-exec-1] o.t.m.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+[INFO ] 09:41:06.507 [http-nio-9999-exec-1] org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+[INFO ] 09:41:06.507 [http-nio-9999-exec-1] org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
